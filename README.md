@@ -46,23 +46,6 @@
 
 <br/>
 
-<h2 align="center">📊 GitHub Stats</h2>
-
-<p align="center">
-  <img height="180" src="https://github-readme-stats.vercel.app/api?username=YOUR_USERNAME&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=2dd4bf&icon_color=a78bfa&border_radius=14" />
-  <img height="180" src="https://github-readme-stats.vercel.app/api/top-langs/?username=YOUR_USERNAME&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=2dd4bf&border_radius=14" />
-</p>
-
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=YOUR_USERNAME&theme=tokyonight&hide_border=true&background=0d1117&ring=2dd4bf&fire=f472b6&currStreakLabel=2dd4bf&border_radius=14" />
-</p>
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=YOUR_USERNAME&theme=tokyonight&no-frame=true&no-bg=true&margin-w=10&row=1&column=7" />
-</p>
-
-<br/>
-
 <h2 align="center">📈 Contribution Graph</h2>
 
 <p align="center">
