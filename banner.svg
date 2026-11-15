@@ -1,0 +1,147 @@
+<svg width="1000" height="360" viewBox="0 0 1000 360" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#04060f"/>
+      <stop offset="0.6" stop-color="#0a1030"/>
+      <stop offset="1" stop-color="#150a33"/>
+    </linearGradient>
+
+    <linearGradient id="name" gradientUnits="userSpaceOnUse" x1="200" y1="0" x2="500" y2="0" spreadMethod="reflect">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f472b6"/>
+      <animateTransform attributeName="gradientTransform" type="translate" from="0 0" to="600 0" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#a78bfa"/>
+      <stop offset="1" stop-color="#f472b6" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="w1" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2dd4bf" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#2dd4bf" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="w2" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#8b5cf6" stop-opacity="0.55"/>
+      <stop offset="1" stop-color="#8b5cf6" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="w3" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ec4899" stop-opacity="0.5"/>
+      <stop offset="1" stop-color="#ec4899" stop-opacity="0"/>
+    </linearGradient>
+
+    <filter id="soft" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="55"/>
+    </filter>
+    <filter id="glow" x="-30%" y="-60%" width="160%" height="220%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+
+    <clipPath id="frame"><rect width="1000" height="360" rx="20"/></clipPath>
+    <clipPath id="typed">
+      <rect x="190" y="228" height="44" width="0">
+        <animate attributeName="width" values="0;0;620;620;0" keyTimes="0;0.06;0.5;0.9;1" dur="10s" repeatCount="indefinite"/>
+      </rect>
+    </clipPath>
+  </defs>
+
+  <style>
+    .mono { font-family: 'Fira Code', 'SFMono-Regular', Consolas, 'Courier New', monospace; }
+    .sans { font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+    .s { animation: tw 3.2s ease-in-out infinite; }
+    @keyframes tw { 0%,100% { opacity: 0.12; } 50% { opacity: 1; } }
+    .blink { animation: blink 0.9s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+
+  <g clip-path="url(#frame)">
+    <rect width="1000" height="360" fill="url(#sky)"/>
+
+    <!-- aurora blobs -->
+    <ellipse rx="230" ry="80" fill="#2dd4bf" opacity="0.38" filter="url(#soft)">
+      <animate attributeName="cx" values="180;420;180" dur="13s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="70;130;70" dur="9s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse rx="260" ry="90" fill="#8b5cf6" opacity="0.40" filter="url(#soft)">
+      <animate attributeName="cx" values="520;760;520" dur="16s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="120;60;120" dur="11s" repeatCount="indefinite"/>
+    </ellipse>
+    <ellipse rx="220" ry="80" fill="#ec4899" opacity="0.32" filter="url(#soft)">
+      <animate attributeName="cx" values="880;650;880" dur="14s" repeatCount="indefinite"/>
+      <animate attributeName="cy" values="90;150;90" dur="12s" repeatCount="indefinite"/>
+    </ellipse>
+
+    <!-- stars -->
+    <g fill="#ffffff">
+      <circle class="s" cx="60"  cy="40"  r="1.6" style="animation-delay:0s"/>
+      <circle class="s" cx="140" cy="95"  r="1.2" style="animation-delay:0.7s"/>
+      <circle class="s" cx="210" cy="30"  r="1.8" style="animation-delay:1.4s"/>
+      <circle class="s" cx="290" cy="75"  r="1.2" style="animation-delay:2.1s"/>
+      <circle class="s" cx="350" cy="25"  r="1.4" style="animation-delay:0.4s"/>
+      <circle class="s" cx="410" cy="60"  r="1.0" style="animation-delay:1.8s"/>
+      <circle class="s" cx="470" cy="22"  r="1.7" style="animation-delay:1.1s"/>
+      <circle class="s" cx="540" cy="50"  r="1.1" style="animation-delay:2.6s"/>
+      <circle class="s" cx="600" cy="28"  r="1.5" style="animation-delay:0.2s"/>
+      <circle class="s" cx="660" cy="85"  r="1.2" style="animation-delay:1.6s"/>
+      <circle class="s" cx="720" cy="35"  r="1.8" style="animation-delay:2.3s"/>
+      <circle class="s" cx="780" cy="70"  r="1.0" style="animation-delay:0.9s"/>
+      <circle class="s" cx="840" cy="26"  r="1.5" style="animation-delay:1.9s"/>
+      <circle class="s" cx="900" cy="62"  r="1.2" style="animation-delay:0.5s"/>
+      <circle class="s" cx="950" cy="30"  r="1.7" style="animation-delay:2.8s"/>
+      <circle class="s" cx="90"  cy="160" r="1.1" style="animation-delay:1.3s"/>
+      <circle class="s" cx="930" cy="150" r="1.3" style="animation-delay:0.1s"/>
+      <circle class="s" cx="40"  cy="230" r="1.0" style="animation-delay:2.0s"/>
+      <circle class="s" cx="965" cy="215" r="1.5" style="animation-delay:1.0s"/>
+      <circle class="s" cx="250" cy="150" r="1.0" style="animation-delay:2.5s"/>
+      <circle class="s" cx="760" cy="160" r="1.1" style="animation-delay:0.6s"/>
+    </g>
+
+    <!-- orbit rings -->
+    <g transform="translate(500 150)">
+      <circle r="150" fill="none" stroke="#ffffff" stroke-opacity="0.09" stroke-dasharray="3 9">
+        <animateTransform attributeName="transform" type="rotate" from="0" to="360" dur="40s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="215" fill="none" stroke="#a78bfa" stroke-opacity="0.12" stroke-dasharray="1 14">
+        <animateTransform attributeName="transform" type="rotate" from="360" to="0" dur="60s" repeatCount="indefinite"/>
+      </circle>
+      <circle r="5" fill="#2dd4bf" filter="url(#glow)">
+        <animateMotion dur="14s" repeatCount="indefinite" path="M150,0 A150,150 0 1,1 -150,0 A150,150 0 1,1 150,0"/>
+      </circle>
+      <circle r="4" fill="#f472b6" filter="url(#glow)">
+        <animateMotion dur="22s" repeatCount="indefinite" path="M-215,0 A215,215 0 1,0 215,0 A215,215 0 1,0 -215,0"/>
+      </circle>
+    </g>
+
+    <!-- waves -->
+    <path fill="url(#w3)" d="M0 336 Q150 316 300 336 T600 336 T900 336 T1200 336 T1500 336 T1800 336 V360 H0 Z">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-600 0" dur="18s" repeatCount="indefinite"/>
+    </path>
+    <path fill="url(#w2)" d="M0 318 Q100 290 200 318 T400 318 T600 318 T800 318 T1000 318 T1200 318 T1400 318 T1600 318 V360 H0 Z">
+      <animateTransform attributeName="transform" type="translate" from="-400 0" to="0 0" dur="14s" repeatCount="indefinite"/>
+    </path>
+    <path fill="url(#w1)" d="M0 300 Q125 262 250 300 T500 300 T750 300 T1000 300 T1250 300 T1500 300 T1750 300 T2000 300 V360 H0 Z">
+      <animateTransform attributeName="transform" type="translate" from="0 0" to="-500 0" dur="10s" repeatCount="indefinite"/>
+    </path>
+
+    <!-- text -->
+    <text class="mono" x="500" y="104" text-anchor="middle" font-size="15" fill="#2dd4bf" letter-spacing="7" opacity="0.95">&lt; HELLO, WORLD /&gt;</text>
+
+    <text class="sans" x="500" y="184" text-anchor="middle" font-size="72" font-weight="800" fill="url(#name)" filter="url(#glow)">YOUR NAME</text>
+
+    <rect x="330" y="205" width="340" height="2" rx="1" fill="url(#line)">
+      <animate attributeName="opacity" values="0.35;1;0.35" dur="3s" repeatCount="indefinite"/>
+    </rect>
+
+    <g clip-path="url(#typed)">
+      <text class="mono" x="190" y="256" font-size="24" fill="#cbd5e1" textLength="620" lengthAdjust="spacing">Full-Stack Developer · Open-Source Nerd</text>
+    </g>
+    <rect class="blink" x="190" y="234" width="3" height="28" fill="#2dd4bf">
+      <animate attributeName="x" values="190;190;810;810;190" keyTimes="0;0.06;0.5;0.9;1" dur="10s" repeatCount="indefinite"/>
+    </rect>
+  </g>
+
+  <rect x="1" y="1" width="998" height="358" rx="19" fill="none" stroke="#ffffff" stroke-opacity="0.08"/>
+</svg>
