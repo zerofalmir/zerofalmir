@@ -129,7 +129,7 @@
     <!-- text -->
     <text class="mono" x="500" y="104" text-anchor="middle" font-size="15" fill="#2dd4bf" letter-spacing="7" opacity="0.95">&lt; HELLO, WORLD /&gt;</text>
 
-    <text class="sans" x="500" y="184" text-anchor="middle" font-size="72" font-weight="800" fill="url(#name)" filter="url(#glow)">YOUR NAME</text>
+    <text class="sans" x="500" y="184" text-anchor="middle" font-size="72" font-weight="800" fill="url(#name)" filter="url(#glow)">ZEROFALMIR</text>
 
     <rect x="330" y="205" width="340" height="2" rx="1" fill="url(#line)">
       <animate attributeName="opacity" values="0.35;1;0.35" dur="3s" repeatCount="indefinite"/>
